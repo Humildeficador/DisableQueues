@@ -34,9 +34,9 @@ function updateConfigAndShowToast(key, label) {
     commandBar(key, label, () => {
         update(key);
         if (get()[key]) {
-            showToast(`Você desabilitou ${label}`);
+            showToast(`You have disabled ${label}`);
         } else {
-            showToast(`Você habilitou ${label}`);
+            showToast(`You have enabled ${label}`);
         }
     });
 }
